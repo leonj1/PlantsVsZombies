@@ -6,3 +6,8 @@ tasks:
 
 
 # Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
+
+vscode:
+    extensions:
+        - svelte.svelte-vscode
+        - prettier
