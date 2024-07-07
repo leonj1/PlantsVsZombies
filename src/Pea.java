@@ -12,7 +12,7 @@ public class Pea {
     public Pea(GamePanel parent, int lane, int startX) {
         this.gp = parent;
         this.myLane = lane;
-        posX = startX;
+        this.posX = startX;
     }
 
     public void advance() {

@@ -11,7 +11,7 @@ public class FreezePeashooter extends Plant {
 
     public FreezePeashooter(GamePanel parent, int x, int y) {
         super(parent, x, y);
-        shootTimer = new Timer(2000, (ActionEvent e) -> {
+        shootTimer = new Timer(500, (ActionEvent e) -> {
             //System.out.println("SHOOT");
             if (getGp().getLaneZombies().get(y).size() > 0) {
                 getGp().getLanePeas().get(y).add(new FreezePea(getGp(), y, 103 + this.getX() * 100));
