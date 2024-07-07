@@ -10,4 +10,3 @@ tasks:
 vscode:
     extensions:
         - svelte.svelte-vscode
-        - prettier
