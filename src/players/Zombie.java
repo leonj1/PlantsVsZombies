@@ -1,3 +1,8 @@
+package players;
+
+import game.Collider;
+import game.GamePanel;
+import game.GameWindow;
 import javax.swing.*;
 
 /**

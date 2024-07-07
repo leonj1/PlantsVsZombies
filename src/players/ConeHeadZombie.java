@@ -1,3 +1,7 @@
+package players;
+
+import game.GamePanel;
+
 /**
  * Created by Armin on 6/29/2016.
  */

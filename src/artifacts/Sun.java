@@ -1,3 +1,7 @@
+package artifacts;
+
+import game.GamePanel;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;
@@ -14,10 +18,10 @@ public class Sun extends JPanel implements MouseListener {
     private int myX;
     private int myY;
     private int endY;
-
     private int destruct = 200;
+    private int points;
 
-    public Sun(GamePanel parent, int startX, int startY, int endY) {
+    public Sun(GamePanel parent, int startX, int startY, int endY, int points) {
         this.gp = parent;
         this.endY = endY;
         setSize(80, 80);
@@ -27,6 +31,7 @@ public class Sun extends JPanel implements MouseListener {
         setLocation(myX, myY);
         sunImage = new ImageIcon(this.getClass().getResource("images/sun.png")).getImage();
         addMouseListener(this);
+        this.points = points;
     }
 
     @Override
@@ -60,7 +65,7 @@ public class Sun extends JPanel implements MouseListener {
 
     @Override
     public void mouseReleased(MouseEvent e) {
-        gp.setSunScore(gp.getSunScore() + 1000);
+        gp.setSunScore(gp.getSunScore() + this.points);
         gp.remove(this);
         gp.getActiveSuns().remove(this);
     }

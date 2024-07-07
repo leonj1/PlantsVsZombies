@@ -1,3 +1,8 @@
+package game;
+
+import ui.Menu;
+import ui.PlantCard;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 
@@ -13,7 +18,10 @@ public class GameWindow extends JFrame {
         FreezePeashooter
     }
 
-    //PlantType activePlantingBrush = PlantType.None;
+    enum ZombieState {
+        Alive,
+        Dead
+    }
 
     public GameWindow() {
         setSize(1012, 785);
@@ -66,15 +74,10 @@ public class GameWindow extends JFrame {
         setVisible(true);
     }
 
-    static GameWindow gw;
+//    public GameWindow gw;
 
-    public static void begin() {
-        gw.dispose();
-        gw = new GameWindow();
-    }
-
-    public static void main(String[] args) {
-        gw = new GameWindow(true);
-    }
-
+//    public static void begin() {
+//        this.gw.dispose();
+//        gw = new GameWindow();
+//    }
 }

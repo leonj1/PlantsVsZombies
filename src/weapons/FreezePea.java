@@ -1,3 +1,9 @@
+package weapons;
+
+import aiming.AimingInterface;
+import game.GamePanel;
+import players.Zombie;
+
 import java.awt.*;
 
 /**
@@ -5,8 +11,8 @@ import java.awt.*;
  */
 public class FreezePea extends Pea {
 
-    public FreezePea(GamePanel parent, int lane, int startX) {
-        super(parent, lane, startX);
+    public FreezePea(GamePanel parent, int lane, int startX, AimingInterface aiming) {
+        super(parent, lane, startX, aiming);
     }
 
     @Override

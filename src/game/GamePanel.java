@@ -1,3 +1,10 @@
+package game;
+
+import artifacts.Sun;
+import players.*;
+import weapons.FreezePea;
+import weapons.Pea;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;

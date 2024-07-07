@@ -1,3 +1,8 @@
+package players;
+
+import game.GamePanel;
+import weapons.MachineGunPea;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;

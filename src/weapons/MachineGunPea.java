@@ -1,3 +1,8 @@
+package weapons;
+
+import aiming.AimingInterface;
+import game.GamePanel;
+
 import java.awt.*;
 
 public class MachineGunPea extends Pea {
@@ -6,9 +11,10 @@ public class MachineGunPea extends Pea {
     private int myLane;
     private int zombieX;
     private int zombieY;
+    private AimingInterface aiming;
 
-    public MachineGunPea(GamePanel parent, int lane, int startX, int zombieX, int zombieY) {
-        super(parent, lane, startX);
+    public MachineGunPea(GamePanel parent, int lane, int startX, int zombieX, int zombieY, AimingInterface aiming) {
+        super(parent, lane, startX, aiming);
         this.gp = parent;
         this.myLane = lane;
         this.posX = startX;
